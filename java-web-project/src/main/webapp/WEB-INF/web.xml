@@ -4,4 +4,31 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+</welcome-file-list>
+
+<!--Gestion Erreur HTTP 404-->
+-<error-page>
+
+<error-code>404</error-code>
+
+<location>/erreur.jsp</location>
+
+</error-page>
+
+<!--Gestion Erreur applicative-->
+
+-<error-page>
+
+<exception-type>java.lang.Exception</exception-type>
+
+<location>/erreur.jsp</location>
+
+<!--Gestion Erreur texte-->
+<exception-type>java.lang.Exception</exception-type>
+
+<location>/test.jsp</location>
+
+
+</error-page>
 </web-app>

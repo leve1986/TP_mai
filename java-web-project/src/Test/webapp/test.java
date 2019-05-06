@@ -7,7 +7,8 @@ import org.junit.Test;
 public class Test {
 
 	public static void main(String[] args) {
-	    assertEquals(1, 2);
+	    int i = 2;
+		assertEquals(1, i);
 	}
     
     }
